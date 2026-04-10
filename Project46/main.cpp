@@ -1,4 +1,5 @@
 #include "util.h"
+#include "logic.h"
 int main() {
 	int array[DEFAULT_SIZE];
 
@@ -11,6 +12,11 @@ int main() {
 	print("array: ");
 	print(convert(array, size));
 
+	int max = get_max(array, size);
+	int min = get_min(array, size);
+
+	print("max:" + to_string(max));
+	print("min:" + to_string(min));
 
 	return 0;
 }
