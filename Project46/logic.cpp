@@ -7,6 +7,7 @@ int get_max(int array[], int size) {
 			max = array[i];
 		}
 	}
+	return max;
 }
 int get_min(int array[], int size) {
 	int min = array[0];
@@ -16,4 +17,13 @@ int get_min(int array[], int size) {
 			min = array[i];
 		}
 	}
+	return min;
+}
+int calc(int array[], int size) {
+	double sum = 0;
+	for (int i = 0; i < size; i++)
+	{
+		sum += array[i];
+	}
+	return sum / size;
 }

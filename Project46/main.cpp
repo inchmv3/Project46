@@ -14,9 +14,11 @@ int main() {
 
 	int max = get_max(array, size);
 	int min = get_min(array, size);
+	double average = calc(array, size);
 
 	print("max:" + to_string(max));
 	print("min:" + to_string(min));
+	print("average:" + to_string(average));
 
 	return 0;
 }

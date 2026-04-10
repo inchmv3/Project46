@@ -30,5 +30,5 @@ void init(int array[], int size, int a, int b) {
 		array[i] = rand() % (a - b + 1) + a;
 	}
 
-
+	
 }
